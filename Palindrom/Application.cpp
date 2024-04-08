@@ -1,8 +1,6 @@
 #include "Palindrom.h"
 
 int main() {
-	for (int i = 0; i < 9; i++) {
-		Palindrom p;
-		std::cout << p.Get(rand());
-	}
+	Palindrom p;
+	std::cout << "\n" + p.Get(INT_MAX) + "\n";
 }

@@ -24,11 +24,11 @@ int Palindrom::GetIndexOfDB(string N) {
 	for (int i = 0; i < N.size() - 1; i++) {
 		if (N[i + 1] == '0') break;
 		if (N[i] == N[i + 1]) {
-			cout << "Index of DB in " + N + " : " + to_string(i) + "\n";
+			cout << "Index of DB in " + N + " at " + to_string(i) + " : " + N.at(i) + "\n";
 			return i;
 		}
 	}
-	cout << "Index of DB in " + N + " : -1\n";
+	cout << "No DB in " + N + "\n";
 	return -1;
 }
 
